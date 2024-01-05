@@ -26,3 +26,5 @@ const producto2 = new Object();
 producto2.nombre = "Monitor 20 pulgadas";
 producto2.precio = 300;
 producto2.disponible = true;
+
+console.log(producto2); // Muestra el objeto 'producto' con todas sus propiedades.
