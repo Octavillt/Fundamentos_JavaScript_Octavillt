@@ -18,3 +18,11 @@ const producto = {
 };
 
 console.log(producto); // Muestra el objeto 'producto' con todas sus propiedades.
+
+// Crear un objeto usando 'new Object()'
+const producto2 = new Object();
+
+// Añadir propiedades a este objeto
+producto2.nombre = "Monitor 20 pulgadas";
+producto2.precio = 300;
+producto2.disponible = true;
