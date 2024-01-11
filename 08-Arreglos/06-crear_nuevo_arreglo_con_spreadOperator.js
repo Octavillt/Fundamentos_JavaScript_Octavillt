@@ -3,29 +3,30 @@ Introducción al Spread Operator en JavaScript.
 El Spread Operator (Operador de Propagación) se utiliza para expandir elementos de un iterable (como un arreglo) en lugares
 donde se esperan múltiples elementos (por ejemplo, en otro arreglo).
 */
+
 // Declaración de un arreglo vacío llamado 'carrito'.
 const carrito = []; // Inicialmente, 'carrito' no contiene ningún elemento.
+// Aquí, 'carrito' se declara como un arreglo vacío para almacenar productos.
 
 // Creación de objetos que representan productos.
-// Cada producto tiene un 'nombre' y un 'precio'.
 const producto = {
     nombre: 'Monitor 20 Pulgadas',
     precio: 500
-}; // Representa un monitor.
+}; // 'producto' es un objeto que representa un monitor.
 
 const producto2 = {
     nombre: 'Celular',
     precio: 500
-}; // Representa un celular.
+}; // 'producto2' es un objeto que representa un celular.
 
 const producto3 = {
     nombre: 'Teclado',
     precio: 50
-}; // Representa un teclado.
+}; // 'producto3' es un objeto que representa un teclado.
 
 // Añadiendo 'producto' al arreglo 'carrito' usando el Spread Operator.
 let resultado = [...carrito, producto];
-// Aquí, [...carrito] crea una copia de todos los elementos en 'carrito' (actualmente vacío),
+// Aquí, [...carrito] crea una copia de todos los elementos en 'carrito' (que está vacío),
 // y luego 'producto' se añade al final de esta copia. 'resultado' es ahora un nuevo arreglo que incluye 'producto'.
 
 // Añadiendo 'producto2' al nuevo arreglo 'resultado'.
