@@ -1,5 +1,7 @@
-// Comportamiento de los objetos declarados con 'const'
+// Comportamiento de los objetos declarados con 'const'.
 
+// Declaración de un objeto 'producto' usando 'const'.
+// Aunque se utiliza 'const', las propiedades del objeto aún pueden ser modificadas.
 const producto = {
     nombre: "Monitor 20 pulgadas", // Propiedad 'nombre' con su valor.
     precio: 30, // Propiedad 'precio' con su valor.
@@ -7,9 +9,14 @@ const producto = {
 };
 
 console.log(producto); // Muestra el objeto 'producto' en su estado inicial en la consola.
+// En este punto, 'producto' tiene las propiedades 'nombre', 'precio' y 'disponible' establecidas.
 
-// Modificación de una propiedad del objeto
-producto.disponible = false; // Cambia el valor de la propiedad 'disponible' a 'false'.
+// Modificación de una propiedad del objeto.
+// Cambia el valor de la propiedad 'disponible' a 'false'.
+producto.disponible = false;
+// A pesar de que 'producto' fue declarado con 'const', podemos cambiar el valor de sus propiedades.
+// Esto es posible porque 'const' asegura que la variable 'producto' siempre apunte al mismo objeto, pero no impide la modificación de las propiedades del objeto.
 
 console.log(producto); // Muestra el objeto 'producto' después de la modificación.
-// A pesar de ser declarado con 'const', las propiedades del objeto 'producto' pueden ser modificadas.
+// El objeto 'producto' ahora tiene la propiedad 'disponible' establecida en 'false'.
+// Esto demuestra que las propiedades de un objeto declarado con 'const' pueden ser modificadas.

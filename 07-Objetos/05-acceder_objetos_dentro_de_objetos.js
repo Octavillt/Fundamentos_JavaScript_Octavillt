@@ -1,22 +1,26 @@
-// Trabajo con objetos anidados en JavaScript
+// Trabajo con objetos anidados en JavaScript.
 
+// Declaración de un objeto 'producto'.
+// Este objeto incluye propiedades básicas y un objeto anidado 'informacion'.
 const producto = {
     nombre: "Monitor 33 pulgadas", // Propiedad 'nombre'.
     precio: 30, // Propiedad 'precio'.
     disponible: true, // Propiedad 'disponible'.
-    informacion: {
-        medidas: {
-            peso: '1kg', // Propiedad 'peso' dentro de un objeto anidado.
-            medida: '1m' // Propiedad 'medida' dentro de un objeto anidado.
+    informacion: { // Objeto anidado 'informacion'.
+        medidas: { // Objeto anidado 'medidas' dentro de 'informacion'.
+            peso: '1kg', // Propiedad 'peso' en el objeto anidado 'medidas'.
+            medida: '1m' // Propiedad 'medida' en el objeto anidado 'medidas'.
         },
-        fabricacion: {
-            pais: 'Mexico' // Propiedad 'pais' dentro de un objeto anidado.
+        fabricacion: { // Objeto anidado 'fabricacion' dentro de 'informacion'.
+            pais: 'Mexico' // Propiedad 'pais' en el objeto anidado 'fabricacion'.
         }
     }
 };
 
-// Acceso a propiedades de objetos anidados
-console.log(producto.informacion); // Muestra el objeto 'informacion'.
+// Acceso a propiedades de objetos anidados.
+// Acceder a un objeto anidado se hace utilizando la sintaxis de punto sucesivamente.
+console.log(producto.informacion); // Muestra el objeto 'informacion' completo.
 console.log(producto.informacion.medidas); // Muestra el objeto 'medidas' dentro de 'informacion'.
 console.log(producto.informacion.fabricacion); // Muestra el objeto 'fabricacion' dentro de 'informacion'.
 console.log(producto.informacion.fabricacion.pais); // Muestra el valor de la propiedad 'pais' dentro del objeto anidado 'fabricacion'.
+// Cada 'punto' en la sintaxis accede a un nivel más profundo del objeto.
