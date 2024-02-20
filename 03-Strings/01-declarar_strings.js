@@ -21,4 +21,5 @@ const producto5 = "Monitor 20 Pulgadas"; // Uso de comillas dobles para strings.
 
 // Escapar Caracteres en Strings
 const producto6 = "Monitor 24\""; // Uso de la barra invertida (\) para escapar comillas dobles dentro de un string con comillas dobles.
-console.log(producto4); // Muestra 'Monitor 20 Pulgadas' en la consola.
+// Muestra 'Monitor 20 Pulgadas' en la consola.
+console.log(producto4); // Monitor 20 Pulgadas
