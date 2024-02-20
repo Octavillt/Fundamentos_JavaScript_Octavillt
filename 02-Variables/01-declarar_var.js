@@ -3,10 +3,12 @@ var producto = 'Monitor 23 Pulgadas'; // Inicializamos una variable llamada 'pro
 
 // Las variables también se pueden reasignar
 producto = 'Monitor de 19 Pulgadas'; // Reasignación de la variable 'producto' con un nuevo valor string.
-console.log(producto); // Muestra en consola el valor actual de 'producto', que es 'Monitor de 19 Pulgadas'.
+ // Muestra en consola el valor actual de 'producto', que es 'Monitor de 19 Pulgadas'.
+console.log(producto); // Monitor de 19 Pulgadas
 
 var precio = 200; // Inicializamos una variable llamada 'precio' con un valor numérico.
-console.log(precio); // Muestra en consola el valor de 'precio', que es 200.
+// Muestra en consola el valor de 'precio', que es 200.
+console.log(precio); // 200
 
 // También se puede inicializar una Variable sin Valor y Asignarlo Después
 var disponible; // Declaramos una variable llamada 'disponible' sin asignarle un valor inicial.
@@ -18,9 +20,9 @@ var categoria = 'Computadoras', // Declaramos una variable 'categoria' y le asig
     calificacion = 5; // Declaramos una variable 'calificacion' y le asignamos un valor numérico.
 
 // Muestra los valores de las variables en la consola.
-console.log(categoria)
-console.log(marca)
-console.log(calificacion)
+console.log(categoria) // Computadoras
+console.log(marca) // Marca Famosa
+console.log(calificacion) // 5
 
 // Nomenclatura de variables
 // var 99dias; // NO - Las variables no pueden comenzar con números.
