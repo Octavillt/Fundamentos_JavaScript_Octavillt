@@ -8,15 +8,19 @@ const producto = {
     disponible: true // Propiedad 'disponible' inicialmente establecida en 'true'.
 };
 
-console.log(producto); // Muestra el objeto 'producto' en su estado inicial en la consola.
+// Muestra el objeto 'producto' en su estado inicial en la consola.
+console.log(producto); // { nombre: 'Monitor 20 pulgadas', precio: 30, disponible: true }
 // En este punto, 'producto' tiene las propiedades 'nombre', 'precio' y 'disponible' establecidas.
 
-// Modificación de una propiedad del objeto.
-// Cambia el valor de la propiedad 'disponible' a 'false'.
+/*
+Modificación de una propiedad del objeto.
+Cambia el valor de la propiedad 'disponible' a 'false'.
+A pesar de que 'producto' fue declarado con 'const', podemos cambiar el valor de sus propiedades.
+Esto es posible porque 'const' asegura que la variable 'producto' siempre apunte al mismo objeto, pero no impide la modificación de las propiedades del objeto.
+*/
 producto.disponible = false;
-// A pesar de que 'producto' fue declarado con 'const', podemos cambiar el valor de sus propiedades.
-// Esto es posible porque 'const' asegura que la variable 'producto' siempre apunte al mismo objeto, pero no impide la modificación de las propiedades del objeto.
 
-console.log(producto); // Muestra el objeto 'producto' después de la modificación.
+// Muestra el objeto 'producto' después de la modificación.
+console.log(producto); // { nombre: 'Monitor 20 pulgadas', precio: 30, disponible: false }
 // El objeto 'producto' ahora tiene la propiedad 'disponible' establecida en 'false'.
 // Esto demuestra que las propiedades de un objeto declarado con 'const' pueden ser modificadas.

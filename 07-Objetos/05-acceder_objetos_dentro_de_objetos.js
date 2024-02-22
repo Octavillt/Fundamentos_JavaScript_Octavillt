@@ -19,8 +19,17 @@ const producto = {
 
 // Acceso a propiedades de objetos anidados.
 // Acceder a un objeto anidado se hace utilizando la sintaxis de punto sucesivamente.
-console.log(producto.informacion); // Muestra el objeto 'informacion' completo.
-console.log(producto.informacion.medidas); // Muestra el objeto 'medidas' dentro de 'informacion'.
-console.log(producto.informacion.fabricacion); // Muestra el objeto 'fabricacion' dentro de 'informacion'.
-console.log(producto.informacion.fabricacion.pais); // Muestra el valor de la propiedad 'pais' dentro del objeto anidado 'fabricacion'.
-// Cada 'punto' en la sintaxis accede a un nivel más profundo del objeto.
+
+// Muestra el objeto 'informacion' completo.
+console.log(producto.informacion); // {medidas: { peso: '1kg', medida: '1m' }, fabricacion: { pais: 'Mexico' }}
+
+// Muestra el objeto 'medidas' dentro de 'informacion'.
+console.log(producto.informacion.medidas); // { peso: '1kg', medida: '1m' }
+
+// Muestra el objeto 'fabricacion' dentro de 'informacion'.
+console.log(producto.informacion.fabricacion); // { pais: 'Mexico' }
+
+// Muestra el valor de la propiedad 'pais' dentro del objeto anidado 'fabricacion'.
+console.log(producto.informacion.fabricacion.pais); // Mexico
+
+// NOTA: Cada 'punto' en la sintaxis accede a un nivel más profundo del objeto.

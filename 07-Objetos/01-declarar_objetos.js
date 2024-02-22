@@ -17,7 +17,8 @@ const producto = {
     // Las comas ',' se utilizan para separar las propiedades.
 };
 
-console.log(producto); // Muestra el objeto 'producto' con todas sus propiedades en la consola.
+// Muestra el objeto 'producto' con todas sus propiedades en la consola.
+console.log(producto); // { nombre: 'Monitor 20 Pulgadas', precio: 300, disponible: true }
 
 // Crear un objeto usando 'new Object()'.
 // Este es otro método para crear objetos en JavaScript, aunque es menos común que el literal de objeto.
@@ -29,4 +30,5 @@ producto2.nombre = "Monitor 20 pulgadas"; // Añade la propiedad 'nombre'.
 producto2.precio = 300; // Añade la propiedad 'precio'.
 producto2.disponible = true; // Añade la propiedad 'disponible'.
 
-console.log(producto2); // Muestra el objeto 'producto2' con todas sus propiedades en la consola.
+// Muestra el objeto 'producto2' con todas sus propiedades en la consola.
+console.log(producto2); // { nombre: 'Monitor 20 pulgadas', precio: 300, disponible: true }

@@ -28,6 +28,9 @@ const producto2 = {
 };
 
 // Llamada al método 'mostrarInfo' de ambos objetos.
-console.log(producto.mostrarInfo()); // Muestra la información de 'producto'.
-console.log(producto2.mostrarInfo()); // Muestra la información de 'producto2'.
+// Muestra la información de 'producto'.
+console.log(producto.mostrarInfo()); // El Producto: Monitor 20 pulgadas tiene un precio de 300
+
+// Muestra la información de 'producto2'.
+console.log(producto2.mostrarInfo()); // El Producto: PC tiene un precio de 639
 // Al llamar a 'mostrarInfo', se ejecuta la función dentro de cada objeto, y 'this' se refiere al objeto desde el cual se llama el método.
