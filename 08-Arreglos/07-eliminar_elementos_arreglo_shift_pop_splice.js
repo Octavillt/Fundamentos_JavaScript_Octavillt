@@ -24,33 +24,57 @@ const producto3 = {
 }; // Representa un teclado.
 
 // Añadiendo los productos al arreglo 'carrito'.
-carrito.push(producto); // Añade 'producto' al final del arreglo.
-carrito.push(producto2); // Añade 'producto2' al final del arreglo.
-carrito.unshift(producto3); // Añade 'producto3' al inicio del arreglo.
 
-// Eliminar el primer elemento del arreglo.
+// Añade 'producto' al final del arreglo.
+carrito.push(producto);
+// Imprimir el arreglo 'carrito' en la consola.
+console.log(carrito); // [ { nombre: 'Monitor 20 Pulgadas', precio: 333 } ]
 
-// carrito.shift();
 
-// Este método 'shift' elimina el primer elemento del arreglo 'carrito'.
-// Si 'shift' se ejecuta, 'producto3' (Teclado) será eliminado.
+// Añade 'producto2' al final del arreglo.
+carrito.push(producto2);
+// Imprimir el arreglo 'carrito' en la consola.
+console.log(carrito); // [ { nombre: 'Monitor 20 Pulgadas', precio: 333 }, { nombre: 'Celular', precio: 888 } ]
 
-// Eliminar el último elemento del arreglo.
-// carrito.pop();
 
-// Este método 'pop' elimina el último elemento del arreglo 'carrito'.
-// Si 'pop' se ejecuta, 'producto2' (Celular) será eliminado.
+// Añade 'producto3' al inicio del arreglo.
+carrito.unshift(producto3);
+// Imprimir el arreglo 'carrito' en la consola.
+console.log(carrito); // [ { nombre: 'Teclado', precio: 369 }, { nombre: 'Monitor 20 Pulgadas', precio: 333 }, { nombre: 'Celular', precio: 888 } ]
 
-// Eliminar elementos específicos usando 'splice'.
-// carrito.splice(1, 0); // En este caso, no se elimina ningún elemento.
+
+/*
+Eliminar el primer elemento del arreglo.
+Este método 'shift' elimina el primer elemento del arreglo 'carrito'.
+Si 'shift' se ejecuta, 'producto3' (Teclado) será eliminado.
+*/
+carrito.shift();
+// Imprimir el arreglo 'carrito' en la consola.
+console.log(carrito); // [ { nombre: 'Monitor 20 Pulgadas', precio: 333 }, { nombre: 'Celular', precio: 888 } ]
+
+/*
+Eliminar el último elemento del arreglo.
+Este método 'pop' elimina el último elemento del arreglo 'carrito'.
+Si 'pop' se ejecuta, 'producto2' (Celular) será eliminado.
+*/
+carrito.pop();
+// Imprimir el arreglo 'carrito' en la consola.
+console.log(carrito); // [ { nombre: 'Monitor 20 Pulgadas', precio: 333 } ]
+
 /*
 El primer argumento (1) especifica la posición inicial para el borrado.
 El segundo argumento (0) especifica cuántos elementos se deben eliminar.
 En este caso, como el segundo argumento es 0, no se elimina ningún elemento.
 */
 
-// carrito.splice(1, 2); // Esto eliminaría dos elementos a partir del índice 1.
-// En este caso, se eliminarían 'producto' y 'producto2' del arreglo.
+// En este caso, no se elimina ningún elemento.
+// carrito.splice(1, 0); 
 
+/*
+Eliminar elementos específicos usando 'splice'.
+Esto eliminaría dos elementos a partir del índice 1.
+En este caso, se eliminarían 'producto' y 'producto2' del arreglo.
+*/
+carrito.splice(1, 2);
 // Imprimir el arreglo 'carrito' en la consola.
-console.log(carrito); // Muestra el estado actual del arreglo 'carrito'.
+console.log(carrito); // [ { nombre: 'Monitor 20 Pulgadas', precio: 333 } ]

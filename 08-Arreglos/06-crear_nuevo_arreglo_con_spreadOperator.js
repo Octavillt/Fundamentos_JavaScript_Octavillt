@@ -25,18 +25,28 @@ const producto3 = {
 }; // 'producto3' es un objeto que representa un teclado.
 
 // Añadiendo 'producto' al arreglo 'carrito' usando el Spread Operator.
-let resultado = [...carrito, producto];
+
 // Aquí, [...carrito] crea una copia de todos los elementos en 'carrito' (que está vacío),
 // y luego 'producto' se añade al final de esta copia. 'resultado' es ahora un nuevo arreglo que incluye 'producto'.
+let resultado = [...carrito, producto];
+
+// Muestra el contenido del arreglo 'resultado' después de agregar 'producto'.
+console.log(resultado); // [ { nombre: 'Monitor 20 Pulgadas', precio: 500 } ]
 
 // Añadiendo 'producto2' al nuevo arreglo 'resultado'.
-resultado = [...resultado, producto2];
 // Similar al paso anterior, se crea una copia de 'resultado' y se añade 'producto2' al final.
+resultado = [...resultado, producto2];
+
+// Muestra el contenido del arreglo 'resultado' después de agregar 'producto2'.
+console.log(resultado); // [ { nombre: 'Monitor 20 Pulgadas', precio: 500 }, { nombre: 'Celular', precio: 500 } ]
 
 // Añadiendo 'producto3' al inicio del arreglo 'resultado'.
-resultado = [producto3, ...resultado];
 // En este caso, 'producto3' se añade primero, y luego se expanden los elementos de 'resultado'.
 // 'producto3' se convierte en el primer elemento del nuevo arreglo.
+resultado = [producto3, ...resultado];
+
+// Muestra el contenido del arreglo 'resultado' después de agregar 'producto3'.
+console.log(resultado); // [ { nombre: 'Teclado', precio: 50 }, { nombre: 'Monitor 20 Pulgadas', precio: 500 }, { nombre: 'Celular', precio: 500 } ]
 
 /*
 Nota sobre Programación Declarativa vs Imperativa:
@@ -46,4 +56,13 @@ Ambos enfoques son muy utilizados en JavaScript, y cada uno tiene sus ventajas d
 */
 
 // Imprimiendo el arreglo 'resultado' en forma de tabla en la consola.
-console.table(resultado); // Esto muestra una tabla con los productos en el orden en que fueron añadidos: Teclado, Monitor, Celular.
+// Esto muestra una tabla con los productos en el orden en que fueron añadidos: Teclado, Monitor, Celular.
+console.table(resultado); /*
+┌─────────┬───────────────────────┬────────┐
+│ (index) │ nombre                │ precio │
+├─────────┼───────────────────────┼────────┤
+│ 0       │ 'Teclado'             │ 50     │
+│ 1       │ 'Monitor 20 Pulgadas' │ 500    │
+│ 2       │ 'Celular'             │ 500    │
+└─────────┴───────────────────────┴────────┘
+*/

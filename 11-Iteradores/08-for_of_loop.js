@@ -17,5 +17,6 @@ const carrito = [
 
 // Bucle for...of para iterar sobre cada objeto en el array 'carrito'.
 for (let producto of carrito) {
-    console.log(`${producto.nombre} - $${producto.precio}`); // Imprime las propiedades de cada objeto.
+    // Imprime las propiedades de cada objeto.
+    console.log(`${producto.nombre} - $${producto.precio}`);
 }

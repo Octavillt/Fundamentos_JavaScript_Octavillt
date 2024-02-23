@@ -16,13 +16,15 @@ let total = 0;
 // Uso de 'forEach' para iterar sobre cada producto en 'carrito' y sumar sus precios al total.
 carrito.forEach(producto => total += producto.precio);
 // Impresión del total calculado con 'forEach'.
-console.log(total);
+console.log(total); // 3350
 
-// Uso del método 'reduce' para obtener el mismo resultado que con 'forEach'.
-// 'reduce' toma una función reductora y un valor inicial (en este caso, 0).
-let resultado = carrito.reduce((total, producto) => total + producto.precio, 0);
-/* La función reductora se aplica a cada elemento del array.
+/*
+La función reductora se aplica a cada elemento del array.
 'total' es el acumulador, y 'producto.precio' se suma a este acumulador.
-El resultado de 'reduce' se asigna a 'resultado'. */
-
-console.log(resultado); // Impresión del resultado de 'reduce'.
+El resultado de 'reduce' se asigna a 'resultado'.
+Uso del método 'reduce' para obtener el mismo resultado que con 'forEach'.
+'reduce' toma una función reductora y un valor inicial (en este caso, 0).
+*/
+let resultado = carrito.reduce((total, producto) => total + producto.precio, 0);
+// Impresión del resultado de 'reduce'.
+console.log(resultado); // 3350
