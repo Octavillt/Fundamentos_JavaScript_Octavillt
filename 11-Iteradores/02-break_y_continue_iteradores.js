@@ -11,14 +11,16 @@ no hay necesidad de continuar con las iteraciones restantes del bucle.
 // Bucle for que se ejecuta desde 0 hasta 10.
 for (let i = 0; i <= 10; i++) {
     if (i === 5) { // Verifica si i es igual a 5.
-        console.log('Estamos en el 5... FIN.'); // Si i es 5, imprime un mensaje.
+        // Si i es 5, imprime un mensaje.
+        console.log('Estamos en el 5... FIN.'); // Estamos en el 5... FIN.
         break; // Rompe el bucle, es decir, termina su ejecución inmediatamente.
     }
-    console.log(`Numero:  ${i} `); // Imprime el número actual de i.
+    // Imprime el número actual de i.
+    console.log(`Numero:  ${i} `); // Numero: 0, Numero: 1, Numero: 2, Numero: 3, Numero: 4
 }
 
 /*
-continue
+continue:
 Propósito: Se utiliza para saltar el resto del código en la iteración actual y continuar con la siguiente iteración del bucle.
 Uso Común: Se usa cuando, bajo ciertas condiciones, no quieres que se ejecute el resto del código en la iteración actual del bucle,
 pero aún deseas continuar con las iteraciones siguientes.
@@ -27,10 +29,12 @@ pero aún deseas continuar con las iteraciones siguientes.
 // Otro bucle for que se ejecuta desde 0 hasta 10.
 for (let i = 0; i <= 10; i++) {
     if (i === 5) { // Verifica si i es igual a 5.
-        console.log('Estamos en el 5... CONTINUAR....'); // Si i es 5, imprime un mensaje.
+        // Si i es 5, imprime un mensaje.
+        console.log('Estamos en el 5... CONTINUAR....'); // Estamos en el 5... CONTINUAR....
         continue; // Salta el resto del código en la iteración actual y continúa con la siguiente.
     }
-    console.log(`Numero:  ${i} `); // Imprime el número actual de i.
+    // Imprime el número actual de i.
+    console.log(`Numero:  ${i} `); // Numero: 0, Numero: 1, Numero: 2, Numero: 3, Numero: 4, Numero: 6, Numero: 7, Numero: 8, Numero: 9, Numero: 10
 }
 
 const carrito = [ // Un array de objetos representando un carrito de compras.
@@ -44,8 +48,10 @@ const carrito = [ // Un array de objetos representando un carrito de compras.
 
 for (let i = 0; i < carrito.length; i++) { // Bucle que recorre el array 'carrito'.
     if (carrito[i].descuento) { // Verifica si el objeto actual tiene un descuento.
-        console.log(`El articulo ${carrito[i].nombre} Tiene descuento... `); // Imprime un mensaje si hay descuento.
+        // Imprime un mensaje si hay descuento.
+        console.log(`El articulo ${carrito[i].nombre} Tiene descuento... `); // El articulo Monitor 20 Pulgadas Tiene descuento..., El articulo Tablet  Tiene descuento..., El articulo Teclado Tiene descuento...
         continue; // Salta al siguiente ciclo del bucle.
     }
-    console.log(carrito[i].nombre); // Imprime el nombre del producto.
+    // Imprime el nombre del producto.
+    console.log(carrito[i].nombre); // Televisión 50 Pulgadas, Audifonos, Celular
 }
