@@ -18,14 +18,18 @@ carrito.forEach((producto, index) => {
         resultado = carrito[index]
     }
 });
-console.log(resultado); // Muestra el producto 'Laptop' en la consola.
+// Muestra el producto 'Laptop' en la consola.
+console.log(resultado); // { nombre: 'Laptop', precio: 800 }
 
 // Ejemplo usando el método '.find'.
+
 // 'find' devuelve el primer elemento del array que cumple con la condición especificada.
 const resultado2 = carrito.find(producto => producto.nombre === 'Audifonos');
-console.log(resultado2); // Muestra el producto 'Audifonos' en la consola.
+// Muestra el producto 'Audifonos' en la consola.
+console.log(resultado2); // { nombre: 'Audifonos', precio: 200 }
 
-// Comentario adicional sobre '.find'.
+// 'find' devuelve el primer elemento del array que cumple con la condición especificada.
 // Si hay múltiples elementos que cumplen con la condición, '.find' solo devuelve el primero.
 const resultado3 = carrito.find(producto => producto.precio === 500);
-console.log(resultado3); // Muestra el primer producto con precio 500 en la consola.
+// Muestra el primer producto con precio 500 en la consola.
+console.log(resultado3); // { nombre: 'Monitor 20 Pulgadas', precio: 500 }

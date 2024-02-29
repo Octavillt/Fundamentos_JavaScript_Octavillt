@@ -14,34 +14,40 @@ const carrito = [
 ];
 
 // Ejemplo de uso de 'forEach' para encontrar un índice. Recorre 'meses' y busca el mes 'Mayo'.
+
 // Imprime el índice del mes 'Mayo' si lo encuentra.
 meses.forEach((mes, index) => {
     if (mes === 'Mayo') {
-        console.log(`Encontrado en el indice ${index}`);
+        // Imprime el índice del mes 'Mayo'.
+        console.log(`Encontrado en el indice ${index}`); // Encontrado en el indice 4
     }
 });
 
 // Ejemplo comentado de 'findIndex' para encontrar el índice del mes 'Mayo'.
-// const indice = meses.findIndex( (mes) => {
-//     return mes === 'Mayo';
-// });
-// console.log(indice);
+const index = meses.findIndex((mes) => {
+    return mes === 'Mayo';
+});
+console.log(index); // 4
 
 // Uso de 'findIndex' para encontrar el índice del mes 'Abril' en el array 'meses'.
 const indice = meses.findIndex(mes => mes === 'Abril');
-console.log(indice); // Imprime el índice de 'Abril'.
+// Imprime el índice de 'Abril'.
+console.log(indice); // 3
 
 // Uso de 'findIndex' para intentar encontrar un mes que no está en el array ('Julio').
 const indiceFalse = meses.findIndex(mes => mes === 'Julio');
-console.log(indiceFalse); // Imprime -1, ya que 'Julio' no está en el array.
+// Imprime -1, ya que 'Julio' no está en el array.
+console.log(indiceFalse); // -1
 
 // Operador ternario que imprime un mensaje según si el mes fue encontrado o no.
-console.log(indiceFalse > 0 ? 'Se Encontro el mes digitado...!' : 'No se encontro ninguna incidencia...');
+console.log(indiceFalse > 0 ? 'Se Encontro el mes digitado...!' : 'No se encontro ninguna incidencia...'); // No se encontro ninguna incidencia...!
 
 // Uso de 'findIndex' para encontrar el índice de un objeto en 'carrito' cuyo 'producto' es 'Audifonos'.
 const indiceCarrito = carrito.findIndex(carrito => carrito.producto === 'Audifonos');
-console.log(indiceCarrito); // Imprime el índice del objeto con 'producto' igual a 'Audifonos'.
+// Imprime el índice del objeto con 'producto' igual a 'Audifonos'.
+console.log(indiceCarrito); // 3
 
 // Uso de 'findIndex' para encontrar el índice de un objeto en 'carrito' cuyo 'precio' es 300.
 const indicePrecio = carrito.findIndex(carrito => carrito.precio === 300);
-console.log(indicePrecio); // Imprime el índice del primer objeto con 'precio' igual a 300.
+// Imprime el índice del primer objeto con 'precio' igual a 300.
+console.log(indicePrecio); // 2

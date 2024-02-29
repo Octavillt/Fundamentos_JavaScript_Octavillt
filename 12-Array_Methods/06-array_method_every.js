@@ -23,17 +23,18 @@ carrito.forEach(producto => {
     }
 });
 // Se imprime en consola el valor de 'cumple', que indica si todos los productos tienen un precio menor o igual a 700.
-console.log(cumple);
-
+console.log(cumple); // false
 // Se declara una variable 'resultado' para almacenar el resultado de la verificación con 'every'.
 let resultado;
 
 // Se usa el método 'every' para verificar si todos los productos en el carrito tienen un precio menor a 700.
 resultado = carrito.every(producto => producto.precio < 700);
-console.log(resultado); // Se imprime en consola el resultado de la verificación con 'every'.
+// Se imprime en consola el resultado de la verificación con 'every'.
+console.log(resultado); // false
 
 // Se usa de nuevo 'every' para verificar si todos los productos tienen un precio menor a 1000.
 resultado = carrito.every(producto => producto.precio < 1000);
-console.log(resultado); // Se imprime en consola el resultado de la última verificación.
+// Se imprime en consola el resultado de la última verificación.
+console.log(resultado); // true
 
 

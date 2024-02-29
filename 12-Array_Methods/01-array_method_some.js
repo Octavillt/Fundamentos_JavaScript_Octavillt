@@ -19,7 +19,8 @@ Si se encuentra, se imprime un mensaje en la consola.
 */
 meses.forEach(mes => {
     if (mes === 'Enero') {
-        console.log('Enero si existe...')
+        // Imprime el mensaje en la consola.
+        console.log('Enero si existe...') // Enero si existe...
     }
 });
 
@@ -27,27 +28,27 @@ meses.forEach(mes => {
 // El resultado (true o false) se guarda en la variable 'resultado'.
 const resultado = meses.includes('Enero');
 // Se imprime el resultado en la consola.
-console.log(resultado);
+console.log(resultado); // true
 
 // Chequeo similar al anterior pero con el valor 'Diciembre'.
 const resultado2 = meses.includes('Diciembre');
-// Hay un error aquí, debería imprimir 'resultado2', no 'resultado'.
-console.log(resultado);
+// Se imprime el resultado en la consola.
+console.log(resultado2); // false
 
 // En el caso de un arreglo de objetos .includes no es la mejor opción, podrías utilizar uno llamado .some
-
-// const existe = carrito.some( (producto) =>{
-//     return producto.nombre === 'Celular'
-// });
-// console.log(existe);
+const existe = carrito.some((producto) => {
+    return producto.nombre === 'Celular'
+});
+console.log(existe); // true
 
 // Uso del método 'some' para verificar si algún objeto en 'carrito' tiene un nombre igual a 'Celular'.
+
 // 'some' devuelve true si al menos un elemento cumple con la condición.
-const existe = carrito.some(producto => producto.nombre === 'Celular');
+const existe1 = carrito.some(producto => producto.nombre === 'Celular');
 // Se imprime el resultado de la comprobación en la consola.
-console.log(existe);
+console.log(existe1); // true
 
 // Uso de 'some' con el array 'meses' para comprobar si contiene el mes 'Febrero'.
 const existe2 = meses.some(mes => mes === 'Febrero');
 // Se imprime el resultado en la consola.
-console.log(existe2);
+console.log(existe2); // true
