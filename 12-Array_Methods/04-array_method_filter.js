@@ -1,3 +1,22 @@
+/*
+El método filter() se utiliza para crear un nuevo array con todos los elementos que pasen una prueba (proporcionada como una función).
+
+Caso de uso:
+
+// Tenemos un array de números
+let array = [1, 2, 3, 4, 5];
+
+// Queremos crear un nuevo array con los números que son mayores que 2
+let arrayFiltrado = array.filter(numero => numero > 2);
+
+// Esto imprimirá '[3, 4, 5]' porque esos son los números en el array que son mayores que 2
+console.log(arrayFiltrado); // [3, 4, 5]
+
+En este ejemplo, la función que pasamos a filter() es una función de flecha que toma un número y devuelve true si el número es mayor que 2.
+filter() pasa cada número del array a esta función y si devuelve true, ese número se incluye en el nuevo array.
+Al final, filter() devuelve el nuevo array.
+*/
+
 // Declaración de un array 'carrito' que contiene objetos representando productos con 'nombre' y 'precio'.
 const carrito = [
     { nombre: 'Monitor 20 Pulgadas', precio: 500 },

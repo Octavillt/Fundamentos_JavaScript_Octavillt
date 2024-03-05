@@ -1,3 +1,23 @@
+/*
+El método some() se utiliza para comprobar si al menos un elemento de un array cumple con la condición
+implementada por la función proporcionada. Devuelve true si al menos un elemento cumple la condición, de lo contrario devuelve false.
+
+Caso de uso:
+
+// Tenemos un array de números
+let array = [1, 2, 3, 4, 5];
+
+// Queremos comprobar si al menos un número en el array es mayor que 4
+let resultado = array.some(numero => numero > 4);
+
+// Esto imprimirá 'true' porque al menos un número (5) es mayor que 4
+console.log(resultado); // true
+
+En este ejemplo, la función que pasamos a some() es una función de flecha que toma un número y devuelve true si el número es mayor que 4.
+some() pasa cada número del array a esta función y si alguna vez devuelve true, some() también devuelve true.
+Si la función nunca devuelve true (es decir, si ningún número en el array es mayor que 4), entonces some() devuelve false.
+*/
+
 // Declaración de un array llamado 'meses' que contiene strings de nombres de meses.
 const meses = ['Enero', 'Febrero', 'Marzo', 'Abril', 'Mayo', 'Junio'];
 

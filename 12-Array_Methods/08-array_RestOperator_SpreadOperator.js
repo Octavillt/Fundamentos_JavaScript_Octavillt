@@ -1,3 +1,41 @@
+/*
+El operador de propagación (Spread Operator) (...) se utiliza para expandir elementos iterables, como un array,
+en lugares donde se esperan cero o más argumentos (para llamadas a funciones) o elementos (para literales de array),
+o para descomponer objetos en lugares donde se esperan cero o más pares clave-valor (para literales de objeto).
+
+Caso de uso con arrays:
+
+// Tenemos dos arrays de números
+let array1 = [1, 2, 3];
+let array2 = [4, 5, 6];
+
+// Queremos combinar estos dos arrays en uno usando el operador de propagación
+let arrayCombinado = [...array1, ...array2];
+
+// Esto imprimirá '[1, 2, 3, 4, 5, 6]'
+console.log(arrayCombinado); // [1, 2, 3, 4, 5, 6]
+
+En este ejemplo, usamos el operador de propagación (...) para expandir array1 y array2 dentro de un nuevo array.
+El resultado es un nuevo array que contiene todos los elementos de array1 seguidos de todos los elementos de array2.
+
+También se puede usar para copiar un array:
+
+let arrayOriginal = [1, 2, 3];
+
+// Esto crea una copia de arrayOriginal
+let arrayCopia = [...arrayOriginal];
+
+// Esto imprimirá '[1, 2, 3]'
+console.log(arrayCopia); // [1, 2, 3]
+
+Y para pasar elementos de un array como argumentos a una función:
+let numeros = [1, 2, 3];
+
+// Esto imprimirá '3'
+console.log(Math.max(...numeros)); // 3
+
+En este último ejemplo, ...numeros pasa los elementos de numeros como argumentos separados a la función Math.max().
+*/
 // Se declara un array 'meses' con nombres de meses.
 const meses = ['Enero', 'Febrero', 'Marzo', 'Abril', 'Mayo', 'Junio'];
 

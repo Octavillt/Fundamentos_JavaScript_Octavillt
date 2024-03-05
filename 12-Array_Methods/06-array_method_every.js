@@ -1,3 +1,23 @@
+/*
+El método every() se utiliza para comprobar si todos los elementos de un array cumplen con la condición implementada
+por la función proporcionada. Devuelve true si todos los elementos cumplen la condición, de lo contrario devuelve false.
+
+Caso de uso:
+// Tenemos un array de números
+let array = [1, 2, 3, 4, 5];
+
+// Queremos comprobar si todos los números en el array son menores que 10
+let resultado = array.every(numero => numero < 10);
+
+// Esto imprimirá 'true' porque todos los números en el array son menores que 10
+console.log(resultado); // true
+
+En este ejemplo, la función que pasamos a every() es una función de flecha que toma un número y devuelve true
+si el número es menor que 10. every() pasa cada número del array a esta función y si alguna vez devuelve false,
+every() también devuelve false. Si la función siempre devuelve true (es decir, si todos los números en el array son
+menores que 10), entonces every() devuelve true.
+*/
+
 // Se declara una constante 'carrito', que es un array de objetos, donde cada objeto representa un producto con propiedades 'nombre' y 'precio'.
 const carrito = [
     // Aquí se listan varios productos con sus respectivos precios.

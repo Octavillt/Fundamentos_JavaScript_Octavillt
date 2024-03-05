@@ -1,3 +1,24 @@
+/*
+El método reduce() se utiliza para aplicar una función a un acumulador y a cada valor de un array
+(de izquierda a derecha) para reducirlo a un solo valor.
+
+Caso de uso:
+
+// Tenemos un array de números
+let array = [1, 2, 3, 4, 5];
+
+// Queremos sumar todos los números en el array
+let suma = array.reduce((acumulador, numero) => acumulador + numero, 0);
+
+// Esto imprimirá '15' porque la suma de todos los números en el array es 15
+console.log(suma); // 15
+
+En este ejemplo, la función que pasamos a reduce() es una función de flecha que toma un acumulador y un número,
+y devuelve la suma del acumulador y el número. reduce() pasa el valor acumulado y cada número del array a esta función,
+acumulando el resultado. El segundo argumento para reduce() es el valor inicial del acumulador, en este caso 0. Al final,
+reduce() devuelve el valor acumulado, que es la suma de todos los números en el array.
+*/
+
 // Declaración de un array 'carrito' que contiene varios objetos. Cada objeto representa un producto con 'producto' y 'precio'.
 const carrito = [
     { producto: 'Monitor 20 Pulgadas', precio: 500 },

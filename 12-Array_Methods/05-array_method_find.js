@@ -1,3 +1,23 @@
+/*
+El método find() se utiliza para encontrar el primer elemento de un array que cumple con la condición implementada por la función proporcionada.
+Devuelve el primer elemento que cumple la condición, de lo contrario devuelve undefined si ningún elemento la cumple.
+
+Caso de uso:
+
+// Tenemos un array de números
+let array = [1, 2, 3, 4, 5];
+
+// Queremos encontrar el primer número en el array que es mayor que 3
+let numero = array.find(elemento => elemento > 3);
+
+// Esto imprimirá '4' porque el primer número que es mayor que 3 es 4
+console.log(numero); // 4
+
+En este ejemplo, la función que pasamos a find() es una función de flecha que toma un número y devuelve true si el número es mayor que 3.
+find() pasa cada número del array a esta función y si alguna vez devuelve true, find() devuelve ese número.
+Si la función nunca devuelve true (es decir, si ningún número en el array es mayor que 3), entonces find() devuelve undefined.
+*/
+
 // Se declara una constante 'carrito', la cual es un array de objetos. Cada objeto representa un producto con propiedades 'nombre' y 'precio'.
 const carrito = [
     { nombre: 'Monitor 20 Pulgadas', precio: 500 },

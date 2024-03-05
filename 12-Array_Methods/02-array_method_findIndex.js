@@ -1,3 +1,23 @@
+/*
+El método findIndex() se utiliza para encontrar el índice del primer elemento de un array que cumple con la condición implementada
+por la función proporcionada. Devuelve el índice del primer elemento que cumple la condición, de lo contrario devuelve -1 si ningún elemento la cumple.
+
+Caso de uso:
+
+// Tenemos un array de números
+let array = [1, 2, 3, 4, 5];
+
+// Queremos encontrar el índice del primer número en el array que es mayor que 3
+let indice = array.findIndex(numero => numero > 3);
+
+// Esto imprimirá '3' porque el primer número que es mayor que 3 está en el índice 3
+console.log(indice);  // 3
+
+En este ejemplo, la función que pasamos a findIndex() es una función de flecha que toma un número y devuelve true si el número es mayor que 3.
+findIndex() pasa cada número del array a esta función y si alguna vez devuelve true, findIndex() devuelve el índice de ese número.
+Si la función nunca devuelve true (es decir, si ningún número en el array es mayor que 3), entonces findIndex() devuelve -1.
+*/
+
 // Declaración de un array 'meses' que contiene nombres de meses en forma de strings.
 const meses = ['Enero', 'Febrero', 'Marzo', 'Abril', 'Mayo', 'Junio'];
 
